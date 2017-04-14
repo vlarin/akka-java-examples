@@ -8,7 +8,7 @@ A few examples using Akka with Java. These examples have basic structures in com
 * Logback / SL4J Logger. Log file is under the root path: ``/logs``
 * Akka configuration has most logging options turned on. (chatty)
 
-All examples are runnable from within your IDE, by executing the ``Main`` method in the corresponding ``org.royrusso.app.System`` class.
+All examples are runnable from within your IDE, by executing the ``Main`` method in the corresponding ``org.royrusso.app.Runtime`` class.
 
 Simple Akka Example
 ------------------

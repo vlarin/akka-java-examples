@@ -10,12 +10,12 @@ import org.royrusso.event.ProcessElementEvent;
  */
 public class Consumer extends UntypedActor {
 
-    LoggingAdapter log = Logging.getLogger(getContext().system(), this);
+    private LoggingAdapter log = Logging.getLogger(getContext().system(), this);
 
     @Override
     public void onReceive(Object message) throws Exception {
         if (message instanceof ProcessElementEvent) {
-            //TODO: generate tasks
+            log.info("Received - " + ((ProcessElementEvent) message).getElement());
         } else {
             unhandled(message);
         }
